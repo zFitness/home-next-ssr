@@ -52,7 +52,7 @@ const Banner: React.FC = () => {
               <span>
                 <p>
                   您好， 我是 zfitness，
-                  Web前端工程师。热爱编程，热爱技术。目前在鹅厂实习。
+                  Web前端工程师。热爱编程，热爱技术。
                 </p>
               </span>
             </span>
