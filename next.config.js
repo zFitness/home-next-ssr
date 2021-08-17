@@ -12,6 +12,17 @@ module.exports = withAntdLess({
   cssLoaderOptions: {},
 
   // Other Config Here...
+  reactStrictMode: true,
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      "/": { page: "/" },
+      "/about": { page: "/about" },
+      "/projects": { page: "/projects" },
+    };
+  },
 
   webpack(config) {
     return config;

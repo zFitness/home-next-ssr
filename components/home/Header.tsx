@@ -39,7 +39,7 @@ const HeaderNav: React.FC<Props> = ({ isMobile }) => {
     return () => {
       router.events.off("routeChangeStart", handleRouteChange);
     };
-  }, []);
+  }, [handleRouteChange, router.events, router.pathname]);
 
   const phoneClick = () => {
     setPhoneOpen(!phoneOpen);
@@ -71,7 +71,8 @@ const HeaderNav: React.FC<Props> = ({ isMobile }) => {
             animation={{ x: -30, type: "from", ease: "easeOutQuad" }}
             className="header3-logo jzjgnya1gmn-editor_css"
           >
-            <Image src="/logo.svg" width={40} height={40} alt="logo" />
+            <img src="/logo.svg" alt="logo" width="32px"/>
+            {/* <Image src="/logo.svg" width={40} height={40} alt="logo" /> */}
           </TweenOne>
         </Link>
 

@@ -51,8 +51,7 @@ const Banner: React.FC = () => {
             <span>
               <span>
                 <p>
-                  您好， 我是 zfitness，
-                  Web前端工程师。热爱编程，热爱技术。
+                  您好， 我是 zfitness， Web前端工程师。热爱编程，热爱技术。
                 </p>
               </span>
             </span>
@@ -69,15 +68,17 @@ const Banner: React.FC = () => {
           key="title"
           className="banner5-image"
         >
-          {/* <img src={banner.img} width="100%" alt="img" /> */}
-          <Image
+          <img src={banner.img} width="100%" alt="img" />
+          {/* <Image
             loader={({ src }) => {
               return src;
             }}
+            className=""
+            unoptimized
             src={banner.img}
             alt="banner"
             layout="fill"
-          />
+          /> */}
         </TweenOne>
       </div>
     </div>
