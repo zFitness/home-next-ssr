@@ -3,6 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { Button, Col, Row } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
+import { IAnimObject } from 'rc-tween-one/typings/AnimObject';
 
 const BasicInfo: React.FC = () => {
   // console.log(tagProps);
@@ -14,7 +15,7 @@ const BasicInfo: React.FC = () => {
       opacity: 0,
       type: 'from',
       ease: 'easeOutQuad',
-    },
+    } as IAnimObject
   };
 
   const banner = {
@@ -26,7 +27,7 @@ const BasicInfo: React.FC = () => {
       <Row className="about-page basic-page">
         <QueueAnim
           key="text"
-          type={animType.queue}
+          // type={animType.queue}
           leaveReverse
           ease={['easeOutQuad', 'easeInQuad']}
           className="basic-title-wrapper"

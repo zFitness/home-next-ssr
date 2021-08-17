@@ -4,7 +4,7 @@ import QueueAnim from "rc-queue-anim";
 import { Row, Col } from "antd";
 import Image from "next/image";
 
-const OtherLinks: React.FC = ({ data }) => {
+const OtherLinks = ({ data }: any) => {
   return (
     <div className="home-page-wrapper feature7-wrapper">
       <div className="home-page feature7">
@@ -14,7 +14,7 @@ const OtherLinks: React.FC = ({ data }) => {
         </div>
         <QueueAnim key="queue" type="bottom" leaveReverse interval={50}>
           <Row gutter={24} className="feature7-block-wrapper">
-            {data.map((item) => (
+            {data.map((item: any) => (
               <Col md={6} xs={24} className="feature7-block" key={item.name}>
                 <a
                   href={item.href}

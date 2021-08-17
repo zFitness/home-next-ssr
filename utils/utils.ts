@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import enquireJs from 'enquire.js';
 
 export const isImg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?/;
-export const getChildrenToRender = (item, i) => {
+export const getChildrenToRender = (item: any, i: any) => {
   let tag = item.name.indexOf('title') === 0 ? 'h1' : 'div';
   tag = item.href ? 'a' : tag;
   let children =
@@ -11,6 +11,7 @@ export const getChildrenToRender = (item, i) => {
       ? React.createElement('img', { src: item.children, alt: 'img' })
       : item.children;
   if (item.name.indexOf('button') === 0 && typeof item.children === 'object') {
+    // eslint-disable-next-line react/no-children-prop
     children = React.createElement(Button, {
       href: item.children.href,
       type: item.children.type,

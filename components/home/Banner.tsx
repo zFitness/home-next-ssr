@@ -3,6 +3,8 @@ import QueueAnim from "rc-queue-anim";
 import TweenOne from "rc-tween-one";
 import { Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { IAnimObject } from "rc-tween-one/typings/AnimObject";
+import Image from "next/image";
 
 const Banner: React.FC = () => {
   // console.log(tagProps);
@@ -14,7 +16,7 @@ const Banner: React.FC = () => {
       opacity: 0,
       type: "from",
       ease: "easeOutQuad",
-    },
+    } as IAnimObject,
   };
 
   const banner = {
@@ -26,7 +28,7 @@ const Banner: React.FC = () => {
       <div className="home-page banner5-page">
         <QueueAnim
           key="text"
-          type={animType.queue}
+          // type={animType.queue}
           leaveReverse
           ease={["easeOutQuad", "easeInQuad"]}
           className="banner5-title-wrapper"
@@ -67,7 +69,15 @@ const Banner: React.FC = () => {
           key="title"
           className="banner5-image"
         >
-          <img src={banner.img} width="100%" alt="img" />
+          {/* <img src={banner.img} width="100%" alt="img" /> */}
+          <Image
+            loader={({ src }) => {
+              return src;
+            }}
+            src={banner.img}
+            alt="banner"
+            layout="fill"
+          />
         </TweenOne>
       </div>
     </div>

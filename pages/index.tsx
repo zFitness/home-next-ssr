@@ -7,7 +7,7 @@ import {
   otherLinks,
 } from "../data.source";
 import enquireJs from "enquire.js";
-import { enquireScreen } from "enquire-js";
+import { enquireScreen } from "../utils/enquire";
 
 import { Button } from "antd";
 import Banner from "../components/home/Banner";
@@ -21,13 +21,14 @@ require("../components/home/less/antMotionStyle.less");
 
 const Index = () => {
   const [isMobile, setMobile] = useState<boolean>(false);
-  const [location, setLocation] = useState();
+  const [location, setLocation] = useState<Location>();
   useEffect(() => {
-    enquireScreen((res) => {
+    enquireScreen((res: boolean) => {
       setMobile(res);
     });
-
-    setLocation(window.location);
+    if (window) {
+      setLocation(window.location);
+    }
   }, []);
 
   return (

@@ -22,7 +22,7 @@ const ProjectList: React.FC = () => {
       <Row className="about-page projects-page">
         <QueueAnim
           key="text"
-          type={animType.queue}
+          // type={animType.queue}
           leaveReverse
           ease={['easeOutQuad', 'easeInQuad']}
           className="projects-title-wrapper"

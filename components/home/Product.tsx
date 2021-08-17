@@ -5,7 +5,7 @@ import TweenOne from "rc-tween-one";
 import { Row, Col, Button } from "antd";
 import { getChildrenToRender } from "../../utils/utils";
 
-const Product: React.FC = (props) => {
+const Product = (props: any) => {
   const { ...tagProps } = props;
   const { dataSource, isMobile, index } = tagProps;
 
@@ -30,7 +30,7 @@ const Product: React.FC = (props) => {
     <Col md={12} xs={24} key="text">
       <QueueAnim
         key="text"
-        type={animType.queue}
+        // type={animType.queue}
         leaveReverse
         ease={["easeOutQuad", "easeInQuad"]}
         className="pricing0-text-wrapper"
