@@ -19,7 +19,7 @@ const BasicInfo: React.FC = () => {
   };
 
   const banner = {
-    img: 'https://gitee.com/zFitness/picture-bed/raw/master/img/undraw_static_website_0107.svg',
+    img: '/img/undraw_static_website_0107.svg',
   };
 
   return (

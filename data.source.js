@@ -5,7 +5,7 @@ export const Nav30DataSource = {
   logo: {
     className: "header3-logo jzjgnya1gmn-editor_css",
     children:
-      "https://gitee.com/zFitness/picture-bed/raw/master/img/DESIGN-WEB.svg",
+      "/img/DESIGN-WEB.svg",
   },
   Menu: {
     className: "header3-menu",
@@ -72,7 +72,7 @@ export const Pricing00DataSource = {
   img: {
     className: "pricing0-img",
     name: "image",
-    children: "https://gitee.com/zFitness/picture-bed/raw/master/img/xx.png",
+    children: "/img/xx.png",
   },
   childWrapper: {
     className: "pricing0-text-wrapper",
@@ -112,7 +112,7 @@ export const Pricing01DataSource = {
   img: {
     className: "pricing0-img",
     name: "image",
-    children: "https://gitee.com/zFitness/picture-bed/raw/master/img/1.jpg",
+    children: "/img/1.jpg",
   },
   childWrapper: {
     className: "pricing0-text-wrapper",
@@ -301,20 +301,20 @@ export const otherLinks = [
   {
     href: "https://juejin.cn/user/923245499393687",
     cover:
-      "https://gitee.com/zFitness/picture-bed/raw/master/img/%E6%8E%98%E9%87%91.svg",
+      "/img/%E6%8E%98%E9%87%91.svg",
     name: "掘金",
     intro: "以后可能会在这个平台写一些文章",
   },
   {
     href: "https://zfitness.gitee.io/notes/",
-    cover: "https://zfitness.gitee.io/notes/img/logo.svg",
+    cover: "/img/logo.svg",
     name: "notes",
     intro: "使用 vuepress 构建的知识库",
   },
   {
     href: "https://github.com/zFitness",
     cover:
-      "https://gitee.com/zFitness/picture-bed/raw/master/img/Logo%20GitHub.svg",
+      "/img/Logo%20GitHub.svg",
     name: "github",
     intro: "github 主要存放了自己写的一些代码",
   },

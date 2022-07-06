@@ -5,8 +5,8 @@ import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
 
 const GratitudeContent: React.FC = ({ ...props }) => {
   const arr = [
-    "https://gitee.com/zFitness/picture-bed/raw/master/img/tencent.svg",
-    "https://gitee.com/zFitness/picture-bed/raw/master/img/mayi.svg",
+    "/img/tencent.svg",
+    "/img/mayi.svg",
     "https://img.alicdn.com/imgextra/i3/O1CN01Mn65HV1FfSEzR6DKv_!!6000000000514-55-tps-228-59.svg",
   ];
 
